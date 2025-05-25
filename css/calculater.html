@@ -14,6 +14,7 @@
       border: 2px solid #3451e4;
       padding: 20px;
       border-radius: 10px;
+      background-color: black;
     }
     input[type="text"] {
       width: 100%;
@@ -37,10 +38,10 @@
 <div class="calculator">
   <input type="text" id="display" disabled>
   <br>
-  <button onclick="clearDisplay()", style="color:rgb(255, 0, 0);">C</button>
-  <button onclick="appendValue('/')" , style="color:rgb(255, 0, 0);">/</button>
-  <button onclick="appendValue('')", style="color:rgb(255, 0, 0);"></button>
+  <button onclick="clearDisplay()", style="color:rgb(255, 0, 0);">AC</button>
   <button onclick="deleteLast()", style="color:rgb(255, 0, 0);">DEL</button>
+  <button onclick="appendValue('/')" , style="color:rgb(255, 0, 0);">/</button>
+  <button onclick="appendValue('7')", style="color:rgb(255, 0, 0);">*</button>
   <br>
   <button onclick="appendValue('7')", style="color:rgb(4, 0, 255);">7</button>
   <button onclick="appendValue('8')", style="color:rgb(4, 0, 255);">8</button>
@@ -58,6 +59,7 @@
   <button onclick="calculate()", style="color:rgb(4, 0, 255);">=</button>
   <br>
   <button onclick="appendValue('0')", style="color:rgb(4, 0, 255);">0</button>
+  <button onclick="appendValue('0')", style="color:rgb(4, 0, 255);">00</button>
   <button onclick="appendValue('.')", style="color:rgb(0, 255, 21);">.</button>
 </div>
 
